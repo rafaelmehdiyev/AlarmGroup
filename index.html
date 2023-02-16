@@ -10,26 +10,94 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- ==== Font Awesome Pro === -->
+  <link rel="stylesheet" href="assets/libs/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
+  <header class="header">
+    <div class="header-top-area container-fluid d-flex">
+      <div class="header-top-info">
+        <a href="contact.html">
+          <i class="fas fa-home"></i>Bakı şəhəri, Yasamal rayonu,Zərdabi küçəsi, ev 17/51, mənzil 111
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-phone-alt"></i>(+994 12) 434 01 10
+        </a>
+        <a href="mailto:alarmgroup.az@gmail.com">
+          <i class="fas fa-envelope"></i>alarmgroup.az@gmail.com
+        </a>
+      </div>
+      <div class="header-top-social ms-auto">
+        <ul class="row">
+          <li class="col-md-6">
+            <a href="" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li class="col-md-6">
+            <a href="" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <div class="nav-content d-flex">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/Alarm.png" class="img-fluid" alt="AlarmGroupMMC">
+            </a>
+          </div>
+          <div class="nav-menu ms-auto">
+            <a href="">Ana Səhifə</a>
+            <a href="">Haqqımızda</a>
+            <a href="">İşlərimiz</a>
+            <a href="">İşçilərimiz</a>
+            <a href="">Əlaqə</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-
+    <section class="section cover-section">
+      <div class="slickjs responsive">
+        <div>
+          <img src="images/slider1.jpg" class="img-fluid" alt="">
+        </div>
+        <div>
+          <img src="images/slider2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <!-- place footer here -->
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.responsive').slick({
+      autoplay:true,
+      autoplaySpeed: 6000,
+      dots: false,
+      arrows:true,
+      default: true,
+      infinite: false,
+      speed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
   </script>
 </body>
 
