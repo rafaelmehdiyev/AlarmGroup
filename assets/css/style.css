@@ -1,2 +1,66 @@
 @import url(core.css);
 
+/* =======================
+     Cover Section
+====================== */
+
+.cover-section{
+    padding: 0;
+}
+
+.carousel-news-box{
+    position: relative;
+    width: 100%;
+    height: 78vh;
+    background-image: url(../../images/slider1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-news-box::after,.carousel-news-content{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.carousel-news-box::after
+{
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.carousel-news-content{
+    color:white;
+    z-index: 2;
+    margin: auto 15%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.carousel-news-header{
+    font-family: var(--family-Rajdhani);
+}
+
+.carousel-news-heading{
+    font-size: 80px;
+    font-weight: 700;
+    transition: .5s;
+    line-height: 1;
+}
+
+.carousel-news-body{
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+/* =======================
+     Partners Section
+====================== */
+
+.partners-section{
+    background-color: var(--color-main);
+}
