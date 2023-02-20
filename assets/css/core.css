@@ -33,6 +33,12 @@ bg-main{
     padding: 2rem 0;
 }
 
+.vertical-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ==========================
         Header
 =========================== */

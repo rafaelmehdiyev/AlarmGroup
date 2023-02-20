@@ -64,3 +64,44 @@
 .partners-section{
     background-color: var(--color-main);
 }
+
+.partners-section .slick-next{
+    right: -15px;
+}
+
+.partners-section .slick-prev{
+    left: -15px;
+}
+
+.partner-box img{
+    margin: auto;
+}
+
+/* =======================
+     Features Section
+====================== */
+
+.features-section{
+    background-color: var(--color-white);
+}
+
+.feature-box{
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon{
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    padding: 0 40px;
+}
+
+.feature-title{
+    font-size:22px;
+    font-weight: 700;
+}
+
+.feature-body{
+    color: var(--color-gray);
+}
