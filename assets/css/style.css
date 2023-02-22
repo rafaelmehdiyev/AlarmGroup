@@ -4,11 +4,11 @@
      Cover Section
 ====================== */
 
-.cover-section{
+.cover-section {
     padding: 0;
 }
 
-.carousel-news-box{
+.carousel-news-box {
     position: relative;
     width: 100%;
     height: 80vh;
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
 }
 
-.carousel-news-box::after,.carousel-news-content{
+.carousel-news-box::after, .carousel-news-content {
     content: '';
     position: absolute;
     left: 0;
@@ -26,33 +26,32 @@
     bottom: 0;
 }
 
-.carousel-news-box::after
-{
+.carousel-news-box::after {
     width: 100%;
     background-color: black;
     opacity: 0.5;
 }
 
-.carousel-news-content{
-    color:white;
+.carousel-news-content {
+    color: white;
     z-index: 2;
     margin: auto 15%;
     width: fit-content;
     height: fit-content;
 }
 
-.carousel-news-header{
+.carousel-news-header {
     font-family: var(--family-Rajdhani);
 }
 
-.carousel-news-heading{
+.carousel-news-heading {
     font-size: 80px;
     font-weight: 700;
     transition: .5s;
     line-height: 1;
 }
 
-.carousel-news-body{
+.carousel-news-body {
     font-weight: 500px;
     font-size: 20px;
 }
@@ -61,19 +60,19 @@
      Partners Section
 ====================== */
 
-.partners-section{
+.partners-section {
     background-color: var(--color-main);
 }
 
-.partners-section .slick-next{
+.partners-section .slick-next {
     right: -15px;
 }
 
-.partners-section .slick-prev{
+.partners-section .slick-prev {
     left: -15px;
 }
 
-.partner-box img{
+.partner-box img {
     margin: auto;
 }
 
@@ -81,28 +80,28 @@
      Features Section
 ====================== */
 
-.features-section{
+.features-section {
     background-color: var(--color-white);
 }
 
-.feature-box{
+.feature-box {
     display: flex;
     align-items: center;
 }
 
-.feature-icon{
+.feature-icon {
     background-color: white;
     width: 90px;
     height: 90px;
     padding: 0 40px;
 }
 
-.feature-title{
-    font-size:22px;
+.feature-title {
+    font-size: 22px;
     font-weight: 700;
 }
 
-.feature-body{
+.feature-body {
     color: var(--color-gray);
 }
 
@@ -110,92 +109,95 @@
     About us Section 
 ======================*/
 
-.about-section{
+.about-section {
     padding-top: 120px;
 }
 
-.about-body{
+.about-body {
     padding-right: 80px;
 }
 
-.about-list-item{
+.about-list-item {
     padding-bottom: 10px;
 }
 
-.about-list-text{
-    font-size:17px;
+.about-list-text {
+    font-size: 17px;
     color: #6A6A6A;
 }
 
-.about-list-items i{
+.about-list-items i {
     color: var(--color-main);
     font-size: 13px;
     margin-right: 5px;
 }
 
-/* Call Section */
-.call-section{
+/* ====================
+    Call Section
+======================*/
+.call-section {
     background-color: var(--color-secondary);
     padding: 60px 0px 55px 0px;
     color: white;
 }
 
-.call-box{
+.call-box {
     width: 70%;
 }
 
-.call-icon{
+.call-icon {
     font-size: 60px;
     margin-right: 25px;
 }
 
-.call-text{
+.call-text {
     font-size: 21px;
     font-weight: 500;
 }
 
-/* Project Section */
+/* ====================
+    Project Section
+======================*/
 
-.projects-section{
-    background:var(--color-white)
+.projects-section {
+    background: var(--color-white)
 }
 
-.project-box{
+.project-box {
     position: relative;
     margin-bottom: 26px;
-    padding:20px;
+    padding: 20px;
 }
 
-.project-image{
+.project-image {
     overflow: hidden;
     position: relative;
 }
 
-.project-image img{
+.project-image img {
     transform: scale(1);
     transition: .5s;
 }
 
-.project-image::before{
+.project-image::before {
     content: "";
     position: absolute;
     top: 0;
-    bottom : 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    background:#00000080;
+    background: #00000080;
     transform: scale(0);
     transition: .5s;
     z-index: 1;
 }
 
 .project-box:hover .project-image::before,
-.project-box:hover .project-image img
-{
+.project-box:hover .project-image img {
     transform: scale(1.2);
 }
 
-.project-content{
+.project-content {
     background-color: white;
     position: absolute;
     left: 0;
@@ -210,17 +212,52 @@
     padding: 25px 0 20px 0;
 }
 
-.project-content-heading h1{
-    font-family:var(--family-Rajdhani);
+.project-content-heading h1 {
+    font-family: var(--family-Rajdhani);
     color: var(--color-dark);
-    font-size:22px;
-    line-height:1.2;
-    font-weight:700;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
     transition: .5s;
 }
 
-.project-content-heading:hover h1{
+.project-content-heading:hover h1 {
     color: var(--color-main);
+}
+
+/* ====================
+    Contact Section
+======================*/
+
+.contact-section {
+    background: var(--color-secondary);
+    color:white;
+}
+
+.contact-form{
+    background: white;
+    border-radius:20px;
+    padding:40px;
+}
+
+input.contact-input{
+    height: 45px;
+}
+
+.contact-input{
+    width: 100%;
+    color: #888888;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #f1f1f1;
+    padding-left: 25px;
+}
+
+.contact-form .button{
+    display:block;
+    width:100%;
 }
 
 
