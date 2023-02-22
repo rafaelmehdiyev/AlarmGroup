@@ -11,7 +11,7 @@
 .carousel-news-box{
     position: relative;
     width: 100%;
-    height: 78vh;
+    height: 80vh;
     background-image: url(../../images/slider1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,4 +104,52 @@
 
 .feature-body{
     color: var(--color-gray);
+}
+
+/* ====================
+    About us Section 
+======================*/
+
+.about-section{
+    padding-top: 120px;
+}
+
+.about-body{
+    padding-right: 80px;
+}
+
+.about-list-item{
+    padding-bottom: 10px;
+}
+
+.about-list-text{
+    font-size:17px;
+    color: #6A6A6A;
+}
+
+.about-list-items i{
+    color: var(--color-main);
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+/* Breaker Section */
+.call-section{
+    background-color: var(--color-secondary);
+    padding: 60px 0px 55px 0px;
+    color: white;
+}
+
+.call-box{
+    width: 70%;
+}
+
+.call-icon{
+    font-size: 60px;
+    margin-right: 25px;
+}
+
+.call-text{
+    font-size: 21px;
+    font-weight: 500;
 }
