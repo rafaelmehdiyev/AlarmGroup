@@ -45,6 +45,10 @@ bg-main{
     align-items: center;
 }
 
+.section-heading{
+    text-align: center;
+}
+
 .subtitle,.section-title{
     font-family: var(--family-Rajdhani);
     font-weight: 700;
