@@ -167,16 +167,19 @@
     position: relative;
     margin-bottom: 26px;
     padding: 20px;
+    
 }
 
 .project-image {
     overflow: hidden;
     position: relative;
+    min-height: 214px;
 }
 
 .project-image img {
     transform: scale(1);
     transition: .5s;
+    min-height: inherit;
 }
 
 .project-image::before {
