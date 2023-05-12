@@ -127,7 +127,7 @@ header .desktop-header .lower-header {
     align-items: center;
 }
 
-header .logo{
+:is(header,footer) .logo{
     max-width: 150px;
 }
 
@@ -138,11 +138,7 @@ header .desktop-header .menu-item {
 header .desktop-header .menu-item a {
     text-transform: uppercase;
     color: var(--color-text);
-    font-size: 15px;
-    line-height: 71px;
-    padding: 0 22px;
     letter-spacing: -.4px;
-    font-weight: 600;
     display: block;
     padding: 0 24px;
     line-height: 70px;
@@ -367,5 +363,104 @@ header .desktop-header .menu-item:hover .sub-menu {
     outline-color: transparent;
     outline: none;
 }
+
+/* ================
+    Footer
+=================== */
+
+footer {
+    padding: 6rem 0;
+    margin-top: 50px;
+    background-color:var(--color-secondary);
+    color:white;
+}
+
+.footer-box{
+    padding: 0 15px;
+}
+
+.footer-box h2{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+footer .social-icons{
+    display: flex;
+    align-items: center;
+}
+
+footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+footer .social-icons a:hover {
+    background-color: var(--color-main);
+}
+
+footer .social-icons i{
+    color:white;
+}
+
+.foooter-navigation{
+    column-gap: 20px;
+}
+
+.foooter-navigation li a{
+    color:white;
+    transition: all 0.5s;
+}
+
+.foooter-navigation li a:hover{
+    color: var(--color-main);
+}
+
+.footer-social-icon{
+    clear: both;
+    float: left;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.footer-social-info p{
+    margin-bottom: 6px;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #fe0000;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+#scroll-to-top:hover {
+    background-color: #ff3434;
+}
+
+#scroll-to-top i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-top: none;
+    border-right: none;
+    font-weight: 900;
+}
+
 
 
