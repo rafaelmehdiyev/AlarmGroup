@@ -93,6 +93,11 @@ bg-main{
        Desktop Header
 =========================== */
 
+header{
+    z-index:9999;
+    position: relative;
+}
+
 header .desktop-header i {
     color: var(--color-main);
     font-size: 21px;
@@ -377,6 +382,7 @@ footer {
 
 .footer-box{
     padding: 0 15px;
+    margin-bottom: 15px;
 }
 
 .footer-box h2{
@@ -433,6 +439,10 @@ footer .social-icons i{
     margin-bottom: 6px;
 }
 
+/* ================
+    Scroll To Top
+=================== */
+
 #scroll-to-top {
     display: none;
     position: fixed;
@@ -462,5 +472,49 @@ footer .social-icons i{
     font-weight: 900;
 }
 
+/* ================
+    Page Break
+=================== */
 
+.page-break{
+    background-image: url(../../images/slider2.jpg);
+    padding: 139px 0px;
+    background-color: #f7f7f7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
 
+.page-break:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(34,54,69,0.2);
+}
+
+.page-break * {
+    color: #fff;
+    z-index: 2;
+    position:relative
+}
+
+.page-break h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.page-break p{
+    font-weight:600;
+}
+
+.page-break p a{
+    transition:all 0.4s;
+}
+
+.page-break p a:hover{
+    color:var(--color-main)
+}
