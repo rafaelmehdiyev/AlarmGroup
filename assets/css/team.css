@@ -16,6 +16,16 @@
     padding-bottom: 55px;
 }
 
+.member-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.member-box .member-img img {
+    width: 100%;
+    height: auto;
+}
+
 .member-info{
     position: absolute;
     bottom:-67px;
@@ -65,3 +75,4 @@
 .member-social i{
     color:var(--color-main);
 }
+

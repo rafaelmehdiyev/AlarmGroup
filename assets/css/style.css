@@ -96,6 +96,10 @@
     padding: 0 40px;
 }
 
+.feature-icon img{
+    height: 100%;
+}
+
 .feature-title {
     font-size: 22px;
     font-weight: 700;
