@@ -94,6 +94,11 @@ label{
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.button.active{
+    background: var(--color-main)!important;
+    color: #fff!important;
+}
+
 /* ==========================
        Desktop Header
 =========================== */
